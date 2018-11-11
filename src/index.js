@@ -1,5 +1,5 @@
-import * as sessionApi from './src/pwinty-end-points';
-import api from './src/axios-config';
+import * as sessionApi from './pwinty-end-points';
+import api from './axios-config';
 
 
 export function Pwinty(merchantId, apiKey) {
@@ -139,6 +139,7 @@ Pwinty.prototype = {
 function setApiHeaders(merchantId, apiKey) {
     if (!isEmpty(merchantId) && !isEmpty(apiKey)) {
         let env = process.env.NODE_ENV.trim();
+        console.log("ENVIRONMENT....",env);
         if (env === 'development') {
             api.setDefaultHeader('X-Pwinty-MerchantId', merchantId);
             api.setDefaultHeader('X-Pwinty-REST-API-Key', apiKey);

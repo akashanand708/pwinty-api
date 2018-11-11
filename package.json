@@ -1,6 +1,6 @@
 {
   "name": "pwinty-api",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Pwinty API provides all api end points to communicate with latest v3.0 Pwinty API.",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,15 @@
   "dependencies": {
     "axios": "0.18.0"
   },
+  "keywords": [
+    "nodejs",
+    "react",
+    "reactjs",
+    "react-native",
+    "jquery",
+    "nodejs-server",
+    "javascript"
+  ],
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-core": "6.10.4",
